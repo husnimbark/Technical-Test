@@ -1,0 +1,4 @@
+npx sequelize-cli model:generate --name provinsi --attributes nama:string,diresmikan:string,photo:string,pulau:string
+npx sequelize-cli model:generate --name kabupaten --attributes idProvinsi:integer,nama:string,diresmikan:string,photo:string
+
+npx sequelize-cli db:migrate
